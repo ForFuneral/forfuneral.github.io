@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +7,41 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-image: url('post6/background.jpg'); /* 设置背景图片 */
+            background-size: cover; /* 背景图片覆盖整个页面 */
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         header {
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.7); /* 半透明背景色 */
             color: white;
             padding: 1em 0;
             text-align: center;
         }
         nav {
-            margin: 1em 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 1em 0;
+            background-color: transparent; /* 背景透明 */
         }
         nav a {
             margin: 0 1em;
-            color: #333;
+            color: black; /* 文字颜色为黑色 */
             text-decoration: none;
+            opacity: 0.7; /* 降低透明度 */
         }
         nav a:hover {
             text-decoration: underline;
+            opacity: 1; /* 鼠标悬停时恢复透明度 */
         }
         main {
             max-width: 800px;
             margin: 2em auto;
             padding: 1em;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.8); /* 深黑色透明背景 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 圆角边框 */
+            border-radius: 5px;
+            color: white; /* 设置文字颜色为白色 */
         }
         article h2 {
             margin-top: 0;
@@ -42,11 +49,21 @@
         article p {
             line-height: 1.6;
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 响应式布局 */
+            gap: 1em; /* 图片之间的间距 */
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
         footer {
             text-align: center;
             padding: 1em 0;
-            background-color: #333;
-            color: white;
+            background-color: transparent; /* 页脚背景透明 */
+            color: black; /* 字体颜色设置为黑色 */
         }
         .show-more {
             display: block;
@@ -68,14 +85,22 @@
         <h1>项目</h1>
     </header>
     <nav>
-        <a href="index.html">返回主页</a>
+        <a href="#home" style="color: black;">首页</a> <!-- 将“主页”的字体颜色设置成黑色 -->
     </nav>
     <main>
         <article>
             <h2>项目</h2>
             <p>该项目并未填写。请等待开发者Luminary进行填写。</p>
         </article>
-<!--...        <a href="index.html" class="show-more">显示更多</a>-->
+        <!-- 这里可以插入最多6张图片 -->
+        <div class="gallery">
+            <img src="post6/image1.jpg" alt="Image 1">
+            <img src="post6/image2.jpg" alt="Image 2">
+            <!-- <img src="post6/image3.jpg" alt="Image 3">
+            <img src="post6/image4.jpg" alt="Image 4">
+            <img src="post6/image5.jpg" alt="Image 5">
+            <img src="post6/image6.jpg" alt="Image 6"> -->
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Luminary Blog</p>
