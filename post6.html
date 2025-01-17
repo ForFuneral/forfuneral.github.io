@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            margin: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1em;
+            color: #333;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2em;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 2em;
+        }
+        .profile h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .profile p {
+            font-size: 1em;
+            margin: 0.5em 0;
+        }
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2em;
+        }
+        .article {
+            background-color: #fff;
+            padding: 1em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1em;
+        }
+        .article h2 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        .article p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .show-more {
+            display: block;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .show-more:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的博客</h1>
+    </header>
+    <nav>
+        <a href="post1.html">文章1</a>
+        <a href="post2.html">文章2</a>
+        <a href="post3.html">文章3</a>
+        <a href="post4.html">文章4</a>
+        <a href="post5.html">文章5</a>
+        <a href="post6.html">文章6</a>
+    </nav>
+    <main>
+        <div class="profile">
+            <img src="avatar.jpg" alt="作者头像">
+            <div>
+                <h1>作者名字</h1>
+                <p>简介：这里是作者的简介。</p>
+            </div>
+        </div>
+        <div class="articles">
+            <!-- 文章1 -->
+            <div class="article">
+                <img src="image1.jpg" alt="文章1图片">
+                <h2>文章1标题</h2>
+                <p>这是文章1的简要内容。你可以在此处编写你的博文内容。</p>
+                <a href="post1.html" class="show-more">阅读更多</a>
+            </div>
+            <!-- 文章2 -->
+            <div class="article">
+                <img src="image2.jpg" alt="文章2图片">
+                <h2>文章2标题</h2>
+                <p>这是文章2的简要内容。你可以在此处编写你的博文内容。</p>
+                <a href="post2.html" class="show-more">阅读更多</a>
+            </div>
+            <!-- 文章3 -->
+            <div class="article">
+                <img src="image3.jpg" alt="文章3图片">
+                <h2>文章3标题</h2>
+                <p>这是文章3的简要内容。你可以在此处编写你的博文内容。</p>
+                <a href="post3.html" class="show-more">阅读更多</a>
+            </div>
+            <!-- 文章4 -->
+            <div class="article">
+                <img src="image4.jpg" alt="文章4图片">
+                <h2>文章4标题</h2>
+                <p>这是文章4的简要内容。你可以在此处编写你的博文内容。</p>
+                <a href="post4.html" class="show-more">阅读更多</a>
+            </div>
+            <!-- 文章5 -->
+            <div class="article">
+                <img src="image5.jpg" alt="文章5图片">
+                <h2>文章5标题</h2>
+                <p>这是文章5的简要内容。你可以在此处编写你的博文内容。</p>
+                <a href="post5.html" class="show-more">阅读更多</a>
+            </div>
+            <!-- 文章6 -->
+            <div class="article">
+                <img src="image6.jpg" alt="文章6图片">
+                <h2>文章6标题</h2>
+                <p>这是文章6的简要内容。你可以在此处编写你的博文内容。</p>
+                <a href="post6.html" class="show-more">阅读更多</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 我的博客</p>
+    </footer>
+</body>
+</html>

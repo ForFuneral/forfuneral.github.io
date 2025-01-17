@@ -1,0 +1,141 @@
+body {
+    background-image: url('background.jpg'); /* 背景图片 */
+    background-size: cover; /* 覆盖整个页面 */
+    background-repeat: no-repeat; /* 不重复 */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
+    color: white; /* 白色文字 */
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
+    margin-bottom: 1em;
+}
+
+nav a {
+    color: white; /* 白色文字 */
+    text-decoration: none;
+    padding: 0.7em 1em;
+    transition: color 0.3s ease; /* 过渡效果 */
+}
+
+nav a:hover {
+    color: #ff6347; /* 鼠标悬停时的文字颜色 */
+}
+
+main {
+    max-width: 800px; /* 最大宽度 */
+    margin: 2em auto; /* 居中对齐 */
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.profile img {
+    width: 100px; /* 固定头像大小 */
+    height: 100px; /* 固定头像大小 */
+    border-radius: 50%; /* 圆形头像 */
+    margin-right: 1em;
+}
+
+.profile h2 {
+    margin: 0;
+}
+
+.contact {
+    margin-top: 1em;
+}
+
+.contact h2 {
+    margin-bottom: 0.5em;
+}
+
+.contact p {
+    margin: 0;
+}
+
+.about {
+    margin-bottom: 1em;
+}
+
+.about h2 {
+    margin-bottom: 0.5em;
+}
+
+.about p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.articles {
+    display: grid; /* 响应式布局 */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 网格布局 */
+    gap: 2em; /* 网格项之间的间距 */
+}
+
+.article {
+    background-color: #fff; /* 卡片背景色 */
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 过渡效果 */
+}
+
+.article:hover {
+    transform: translateY(-10px); /* 鼠标悬停时的位移效果 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 鼠标悬停时的阴影效果 */
+}
+
+.article img {
+    max-width: 100%; /* 图片自适应容器宽度 */
+    display: block; /* 去掉图片下方的空白间隙 */
+    margin-bottom: 1em;
+}
+
+.article h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.article p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.show-more {
+    display: inline-block;
+    margin: 1em auto;
+    padding: 0.7em 1em;
+    text-align: center;
+    color: #fff; /* 按钮文字颜色 */
+    background-color: #333; /* 按钮背景颜色 */
+    border-radius: 5px; /* 圆角边框 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: background-color 0.3s ease; /* 过渡效果 */
+}
+
+.show-more:hover {
+    background-color: #555; /* 鼠标悬停时的背景颜色 */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333; /* 页脚背景颜色 */
+    color: #fff; /* 页脚文字颜色 */
+}
